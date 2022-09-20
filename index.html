@@ -7,36 +7,48 @@
     <meta name="keywords" content="Ignatyo, cv, resume">
     <meta name="description" content="Это сайт - резюме Игнатия Куркакова">
     <title>Ignatyo resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <img src="Ignat.jpg"width=250 alt="Игнат Куркаков">
+    <div class="conteiner">
+
+    <div class="info">
+    <img width="250px" src="Ignat.jpg" class="avatar" alt="Игнат Куркаков"> 
+
+    <div class="info-text">
 
     <h1>Игнатий Куркаков</h1>
+    
 
-    <p> Я работаю в Компании <strong>Транснефть</strong>. Совладелец <strong>ветеринарной аптеки</strong></p>
+    <p> Я работаю в компании <strong>Транснефть</strong>. Совладелец <strong>ветеринарной аптеки</strong></p>
 
     <p> Я люблю <em>путешествовать, играть футбол и вкусно покушать</em></p>
 
     <h4><strong>Список социальных сетей:</strong></h4>
 
-    <a href="https://vk.com/kurkakov" target="_blank">ВКонтакте</a>
+    <a href="https://vk.com/kurkakov" target="_blank" >ВКонтакте</a>
     |
-    <a href="https://t.me/Ignatt_jr" target="_blank">Telegram</a>
+    <a href="https://t.me/Ignatt_jr" target="_blank" >Telegram</a>
     |
-
+    </div>
+    </div>
+    
     <hr>
 
+    <div class="card bg-red">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Футбол</li>
         <li>ММА</li>
         <li>Готовка</li>
         <li>Езда</li>
     </ol>
+    </div>
+    <div class="card bg-yellow">
     <h2>Опыт работы</h2>
-    <table width="500">
+    <table width="500" class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -69,31 +81,36 @@
 </tr>
 </tbody>
     </table>
+    </div>
 
-    <h2>Связаться со мной</h2>
+    
 
-    <form action="/">
-    <div>
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        
+        <div class="form-row">
+    <div class="form-group">
+
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Ваше имя"> 
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="Email">Ваше email:</label>
         <input type="Email" id="Email" placeholder="Ваш Email"> 
     </div>
-
-    <div>
+</div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea cols="45" rows="10" id="message" placeholder="Ваше сообщение..."></textarea> 
+        <textarea cols="45" rows="10" id="message" placeholder="Введите сообщение..."></textarea> 
     </div>
 
-    <button type="submit">Отправить!</button>
+    <button class="btn" type="submit">Отправить!</button>
 
 </form>
 
 
-
+</div>
 </body>
+
 </html>
